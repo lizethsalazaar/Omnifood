@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+:root{
+    --color-primario: #e67e22;
+    --color-secundario: #fdf2e9; 
+    --color-texto: #333333; 
+}
+
+button{
+    border: 0;
+}
+
+nav {
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 48px;
+}
+
+/* Globales */
+
+.boton{
+    padding: 12px 24px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.boton-principal{
+    color: white;
+    background-color: var(--color-primario);
+    margin-right: 10px;
+}   
+
+.boton-secundario{
+    color: var(--color-texto);
+    background-color: white;
+
+}
+
+.boton:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.boton:active{
+    transform: scale(0.9);
+    transition: all 0.5s;
+}
+
+.nav-logo {
+    width: 165px;
+
+}
+
+.nav-lista {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.nav-elemento{
+    font-size: 18px;
+    color: var(--color-texto);
+    font-weight: 500;
+}
+
+
+/* Hero */
+
+.hero{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    background-color: var(--color-secundario);
+    padding: 48px;
+}
+
+.hero-imagen{
+    width: 570px;
+}
+
+.hero-contenedor{
+    width: 40%;
+}
+
+.hero-titulo{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 32px;
+
+}
+
+.hero-subtitulo{
+    font-size: 20px;
+    padding: 48px;
+    font-weight: lighter;
+
+}
+
+.hero-compradores{
+    margin-top: 80px;
+}
+
+.hero-comprador{
+    border-radius: 100px;
+    width: 48px;
+    height: 48px;
+    margin-left: -15px;
+    border: 3px var(--color-secundario) solid;
+
+}
+
+.hero-compradores-texto{
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.hero-compradores-texto-naranja{
+    color: var(--color-primario);
+}
